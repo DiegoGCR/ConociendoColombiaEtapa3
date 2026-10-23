@@ -3,10 +3,10 @@
 Repositorio oficial para el desarrollo del componente práctico del curso **Programación para Videojuegos** (Universidad Nacional Abierta y a Distancia - UNAD).
 
 ## Integrantes del Equipo
-* Diego Giovanni Caicedo Ramírez
+* Diego Giovanny Caicedo Ramírez
 
 ## Descripción del Minijuego
-"Conociendo Colombia" es un videojuego 2D/2.5D de exploración y recolección contrarreloj con propósito social y educativo. En esta Etapa 3 se integraron componentes de arte, audio, pautas de accesibilidad WCAG 2.2 / DUA y un sistema dinámico de trivia cultural obligatoria al recolectar los elementos del escenario.
+"Conociendo Colombia" es un videojuego 2D de exploración y recolección contrarreloj con propósito social y educativo. En esta Etapa 3 se integraron componentes de arte, audio, pautas de accesibilidad WCAG 2.2 / DUA y un sistema dinámico de trivia cultural obligatoria al recolectar los elementos del escenario.
 
 ## Instrucciones de Ejecución
 1. Clonar el repositorio o descargar el proyecto.
