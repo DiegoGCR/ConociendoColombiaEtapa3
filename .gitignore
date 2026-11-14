@@ -1,3 +1,4 @@
+# Unity generated folders
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -6,10 +7,13 @@
 /[Ll]ogs/
 /[Uu]serSettings/
 /[Mm]emoryCaptures/
+/[Rr]ecordings/
 
-# Visual Studio / MonoDevelop cache
+# IDE and editor files
 /[Ee]xtras/
-/[Oo]bj/
+.vs/
+.vscode/
+.idea/
 *.csproj
 *.unityproj
 *.sln
@@ -20,3 +24,12 @@
 *.pidb
 *.booproj
 *.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
