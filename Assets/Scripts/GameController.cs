@@ -37,7 +37,12 @@ public class GameController : MonoBehaviour
 
         if (objetos >= total)
         {
-            FindObjectOfType<TriviaManager>().TriggerEndLevelTrivia();
+            TriviaManager triviaManager = FindFirstObjectByType<TriviaManager>();
+
+            if (triviaManager != null)
+            {
+            triviaManager.TriggerEndLevelTrivia();
+            }
         }
     }
 
