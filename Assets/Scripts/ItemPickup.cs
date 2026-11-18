@@ -1,31 +1,57 @@
+
 using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
 {
-
+    [Header("Pickup Audio")]
     public AudioClip diamante;
-    void OnTriggerEnter2D(Collider2D other)
+
+    [Header("Cultural Information")]
+    public string itemName;
+    public string regionName;
+
+    [TextArea(3, 6)]
+    public string culturalFact;
+
+    public Sprite itemImage;
+
+    private bool collected = false;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the object colliding has the "Player" tag
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player") || collected)
+            return;
+
+        collected = true;
+
+        if (diamante != null && Camera.main != null)
         {
-            Debug.Log("¡Colisión detectada con el Jugador: " + other.gameObject.name + "!");
-
-            AudioSource.PlayClipAtPoint(diamante, Camera.main.transform.position);
-
-            GameController controller = Object.FindFirstObjectByType<GameController>();
-            if (controller != null)
-            {
-                controller.SumarObjeto();
-            }
-
-            // Destroy the item only if the player touched it
-            Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(
+                diamante,
+                Camera.main.transform.position
+            );
         }
-        else 
+
+        GameController controller =
+            Object.FindFirstObjectByType<GameController>();
+
+        CulturalInfoManager infoManager =
+            Object.FindFirstObjectByType<CulturalInfoManager>();
+
+        if (controller != null)
         {
-            // Log if a non-player object touches the item
-            Debug.Log("Algo que NO es el jugador tocó el objeto: " + other.gameObject.name);
+            controller.SumarObjeto();
         }
+
+        if (infoManager != null)
+        {
+            infoManager.ShowInfo(this);
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+
+        Destroy(gameObject);
     }
 }

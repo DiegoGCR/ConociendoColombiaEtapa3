@@ -32,18 +32,8 @@ public class GameController : MonoBehaviour
 
     public void SumarObjeto()
     {
-        objetos++;
-        textoContador.text = "" + objetos + " / " + total;
-
-        if (objetos >= total)
-        {
-            TriviaManager triviaManager = FindFirstObjectByType<TriviaManager>();
-
-            if (triviaManager != null)
-            {
-            triviaManager.TriggerEndLevelTrivia();
-            }
-        }
+            objetos++;
+        textoContador.text = objetos + " / " + total;
     }
 
     public void Perder()
@@ -68,6 +58,22 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("Menu Principal"); 
     }
 
+    public void ContinuarDespuesFicha()
+    {
+        if (objetos >= total)
+        {
+            TriviaManager trivia =
+                FindFirstObjectByType<TriviaManager>();
+
+            if (trivia != null)
+            {
+                trivia.TriggerEndLevelTrivia();
+                return;
+            }
+        }
+
+        Time.timeScale = 1f;
+    }
 
 
 }

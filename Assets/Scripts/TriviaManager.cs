@@ -94,10 +94,10 @@ public class TriviaManager : MonoBehaviour
 
                 int selectedIndex = i;
 
-                optionButtons[i].onClick.RemoveAllListeners();
-                optionButtons[i].onClick.AddListener(
-                    () => OnAnswerSelected(selectedIndex)
-                );
+            
+    optionButtons[i].onClick.AddListener(
+        () => OnAnswerSelected(selectedIndex)
+    );
             }
             else
             {

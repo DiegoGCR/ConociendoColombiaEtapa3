@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f2032e96280ef8e4790ed516e9055744
+guid: 51dec08dd3156a0439ab27fefa7689b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7972489882293752736
-    second: Menu Principal_0
+      213: -5525948781358363723
+    second: elementos video juego3-09_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Menu Principal_0
+      name: elementos video juego3-09_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 242
         y: 0
-        width: 4001
-        height: 2251
+        width: 766
+        height: 1532
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a3d381de49f3ae60800000000000000
-      internalID: 7972489882293752736
+      spriteID: 5bbc1207cd2ef43b0800000000000000
+      internalID: -5525948781358363723
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Menu Principal_0: 7972489882293752736
+      elementos video juego3-09_0: -5525948781358363723
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
